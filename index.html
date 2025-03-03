@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="tailwind.css">
+ <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+ <title>Card de perfil</title>
+</head>
+<body class="flex  items-center justify-center min-h-screen bg-sky-600 font-[inter]">
+ <div id="card" class="bg-white sm:w-[362px] w-[322px] p-10 rounded-xl shadow-2xl" >
+  <div id="info" class="flex flex-col items-center  text-center border-b border-gray-300 pb-3 sm:flex-row sm:items-center sm:text-left sm:gap-4">
+   <div id="left">
+    <img src="./imgPerfil.jpg" alt="avatar" class="rounded-full size-32">
+   </div>
+   <div id="right" >
+    <h1 class="font-bold text-xl">Tiago Pimenta</h1>
+    <p class="text-xs text-gray-500 mb-[7px]">Front-end / UI Design</p>
+    <div id="social" class="flex sm:justify-start sm:flex-row justify-center gap-1.5 mb-[7px]">
+     <a href="https://github.com/Tipimenta" ><img src="./github.svg" alt="Github" class="transition-all duration-700  hover:invert "></a>
+     <a href="https://www.linkedin.com/in/tipimenta/"><img src="./tweet.svg" alt="" class="transition-all duration-700  hover:invert "></a>
+      <a href="https://www.linkedin.com/in/tipimenta/"><img src="./linkedin.svg" alt="Linkedin" class="transition-all duration-700 hover:invert "></a>
+    </div>
+    <button class="bg-sky-600 text-xs text-white font-semibold py-1.5 px-6 rounded-sm flex items-center gap-x-1.5 hover:brightness-120">
+     <img src="./msg.svg" alt="">
+     Mensagem</button>
+   </div>
+  </div>
+  <div class="grid sm:grid-cols-4 grid-cols-2 gap-4 mt-4 text-center">
+   <div>
+     <h2 class="text-xl text-sky-600 font-bold">45</h2>
+     <p class="text-gray-500 text-xs">Projetos</p>
+   </div>
+   <div>
+     <h2 class="text-xl text-sky-600 font-bold">6</h2>
+     <p class="text-gray-500 text-xs">Palestras</p>
+   </div>
+   <div>
+     <h2 class="text-xl text-sky-600 font-bold">15</h2>
+     <p class="text-gray-500 text-xs">Artigos</p>
+   </div>
+   <div>
+     <h2 class="text-xl text-sky-600 font-bold">12K</h2>
+     <p class="text-gray-500 text-xs">Seguidores</p>
+   </div>
+ </div>
+</div>
+</body>
+</html>
